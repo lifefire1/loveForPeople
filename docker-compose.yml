@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  
+  db:
+    image: postgres
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: Alex2016
+      POSTGRES_USER: lexa
+      POSTGRES_DB: motivation
+    ports:
+      - 5432:5432
+    networks:
+      - postgress
+
+  ubuntu:
+    image: ubuntu
+    container_name: some-ubuntu
+    ports:
+      - [8989:80]
+    networks:
+      - uwu

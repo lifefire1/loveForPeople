@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: lexa
+    password: Alex2016
+    url: jdbc:postgresql://localhost:5432/motivation
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database: postgresql
+
